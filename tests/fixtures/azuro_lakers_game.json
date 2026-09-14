@@ -1,0 +1,37 @@
+{
+  "schema_version": "market_snapshot.v1",
+  "exchange": "azuro",
+  "market_id": "azu-lakers-celtics-game",
+  "fetched_at": "2026-03-10T10:03:00Z",
+  "source": {
+    "collector": "fixture",
+    "endpoints": ["https://api.onchainfeed.org/api/v1/public/market-manager/conditions-by-game-ids"]
+  },
+  "raw": {
+    "environment": "PolygonUSDT",
+    "game": {
+      "gameId": "1006000000000",
+      "title": "Los Angeles Lakers - Boston Celtics",
+      "startsAt": "1773525600",
+      "turnover": "12000",
+      "sport": {"name": "Basketball", "slug": "basketball"},
+      "league": {"name": "NBA", "slug": "nba"},
+      "country": {"name": "USA", "slug": "usa"},
+      "participants": [
+        {"name": "Los Angeles Lakers"},
+        {"name": "Boston Celtics"}
+      ]
+    },
+    "condition": {
+      "conditionId": "3006100600000000000001",
+      "state": "Active",
+      "title": null,
+      "margin": 0,
+      "outcomes": [
+        {"outcomeId": "1", "odds": "1.85"},
+        {"outcomeId": "2", "odds": "1.95"}
+      ]
+    }
+  }
+}
+

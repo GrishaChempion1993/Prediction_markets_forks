@@ -1,0 +1,31 @@
+{
+  "schema_version": "market_snapshot.v1",
+  "exchange": "polymarket",
+  "market_id": "poly-lakers-title-2026",
+  "fetched_at": "2026-03-10T10:02:00Z",
+  "source": {
+    "collector": "fixture",
+    "endpoints": ["https://gamma-api.polymarket.com/markets"]
+  },
+  "raw": {
+    "question": "Will the Los Angeles Lakers win the 2026 NBA Championship?",
+    "description": "This market resolves to Yes if the Los Angeles Lakers win the 2026 NBA Finals.",
+    "outcomes": "[\"Yes\", \"No\"]",
+    "outcomePrices": "[\"0.12\", \"0.88\"]",
+    "clobTokenIds": "[\"lakers-title-yes\", \"lakers-title-no\"]",
+    "orderBooks": {
+      "lakers-title-yes": {
+        "bids": [{"price": "0.11", "size": "200"}],
+        "asks": [{"price": "0.12", "size": "200"}]
+      },
+      "lakers-title-no": {
+        "bids": [{"price": "0.87", "size": "200"}],
+        "asks": [{"price": "0.88", "size": "200"}]
+      }
+    },
+    "endDate": "2026-06-20T23:59:00Z",
+    "volumeNum": 50000,
+    "liquidityNum": 12000
+  }
+}
+

@@ -1,0 +1,41 @@
+{
+  "schema_version": "market_snapshot.v1",
+  "exchange": "myriad",
+  "market_id": "myr-btc-100k-2026",
+  "fetched_at": "2026-03-10T10:01:00Z",
+  "source": {
+    "collector": "fixture",
+    "endpoints": ["https://myriad.markets/markets"]
+  },
+  "raw": {
+    "id": 883,
+    "networkId": 274133,
+    "title": "BTC to hit $100K before 2027",
+    "description": "Resolves to Yes if Bitcoin trades at or above $100,000 before January 1, 2027 based on Binance BTC/USDT spot price.",
+    "category": "Crypto",
+    "topics": ["Crypto", "Bitcoin"],
+    "resolutionSource": "https://www.binance.com/en/trade/BTC_USDT?type=spot",
+    "expiresAt": "2026-12-31T23:59:00Z",
+    "fee": 0.01,
+    "liquidity": 4000,
+    "volume": 20000,
+    "token": {
+      "symbol": "USDC.e"
+    },
+    "outcomes": [
+      {
+        "id": 0,
+        "title": "Yes",
+        "price": 0.57,
+        "shares": 2000
+      },
+      {
+        "id": 1,
+        "title": "No",
+        "price": 0.43,
+        "shares": 2000
+      }
+    ]
+  }
+}
+

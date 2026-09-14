@@ -1,0 +1,2 @@
+"""Prediction arbitrage scanner package."""
+

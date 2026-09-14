@@ -1,0 +1,15 @@
+{
+  "name": "prediction-arb-scanner",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Hybrid TypeScript and Python scanner for prediction market arbitrage research.",
+  "scripts": {
+    "collect": "tsx collect"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.8.2"
+  }
+}

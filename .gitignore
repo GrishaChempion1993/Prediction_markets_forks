@@ -1,0 +1,12 @@
+.env
+.env.*
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+data/
+logs/
+runtime/
+tmp/
+output/
+*.zip

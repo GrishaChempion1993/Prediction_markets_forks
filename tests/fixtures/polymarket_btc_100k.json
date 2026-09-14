@@ -1,0 +1,32 @@
+{
+  "schema_version": "market_snapshot.v1",
+  "exchange": "polymarket",
+  "market_id": "poly-btc-100k-2026",
+  "fetched_at": "2026-03-10T10:00:00Z",
+  "source": {
+    "collector": "fixture",
+    "endpoints": ["https://gamma-api.polymarket.com/markets"]
+  },
+  "raw": {
+    "question": "Will Bitcoin reach $100,000 by December 31, 2026?",
+    "description": "This market resolves to Yes if BTC/USD touches $100,000 on any major exchange before December 31, 2026.",
+    "outcomes": "[\"Yes\", \"No\"]",
+    "outcomePrices": "[\"0.53\", \"0.47\"]",
+    "clobTokenIds": "[\"poly-yes\", \"poly-no\"]",
+    "orderBooks": {
+      "poly-yes": {
+        "bids": [{"price": "0.52", "size": "100"}],
+        "asks": [{"price": "0.53", "size": "250"}]
+      },
+      "poly-no": {
+        "bids": [{"price": "0.46", "size": "100"}],
+        "asks": [{"price": "0.47", "size": "250"}]
+      }
+    },
+    "endDate": "2026-12-31T23:59:00Z",
+    "volumeNum": 100000,
+    "liquidityNum": 50000,
+    "resolutionSource": "https://www.reuters.com/markets/currencies/"
+  }
+}
+

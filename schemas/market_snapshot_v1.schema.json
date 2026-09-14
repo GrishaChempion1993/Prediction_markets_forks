@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/market_snapshot_v1.schema.json",
+  "title": "MarketSnapshotV1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "exchange",
+    "market_id",
+    "fetched_at",
+    "source",
+    "raw"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "market_snapshot.v1"
+    },
+    "exchange": {
+      "type": "string",
+      "enum": ["polymarket", "opn", "azuro", "sxbet", "myriad", "kalshi"]
+    },
+    "market_id": {
+      "type": "string"
+    },
+    "fetched_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "source": {
+      "type": "object",
+      "required": ["collector", "variant", "status", "completeness", "endpoints"],
+      "properties": {
+        "collector": {
+          "type": "string"
+        },
+        "variant": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["ok", "partial", "degraded", "error"]
+        },
+        "completeness": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "endpoints": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "raw": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}
